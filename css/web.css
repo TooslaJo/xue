@@ -1,0 +1,168 @@
+*{
+    font-size: 20px;
+    font-style: "微軟正黑體",sans-serif;
+}
+
+::selection{
+    background: gold;
+    color: white;
+}
+
+::-moz-selection{
+    background: gold;
+    color: white;
+}
+
+/*gotoTop回首頁*/
+#gotop{
+    color: black;
+    right: 100px;
+    bottom: 100px;
+    position: fixed;
+    cursor: pointer;
+}
+
+/*navigation bar*/
+nav{
+    margin-top: -160px;
+    text-align: center;  /*此行必在導覽列裡，在子物件使用inline-block就能平行並排*/
+}
+
+nav div{
+    display: inline-block;
+    color: white;
+    background-color: #eeb7b2;
+    width: 9.1%;
+    height: 68px;
+    margin: 50px 1.15%;
+    text-decoration: none;
+}
+
+#TITLE{
+    line-height: 500px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*article*/
+article div{
+    height: 500px;
+    background-color: #eeb7b2;
+    margin-bottom: 50px;
+    text-align: center;/*此行必在主題欄裡，在子物件使用inline-block就能平行並排*/
+    color: white;
+}
+
+article div div{
+    display: inline-block;
+    width: 500px;
+    margin: 0 1.15%;
+    background-color: #eeb7b2;
+    color: #555555;
+    vertical-align: middle;
+}
+
+.img{
+    width: 500px;
+    height: 500px;
+}
+
+/*超連結提示使用者不能點選(未完)
+a{  
+    cursor: not-allowed;
+}*/
+
+/*場所簡介*/
+.place{
+    font-size: 30px;
+}
+
+/*footer*/
+footer{
+    font-size: 15px; 
+    color: #555555;
+    text-align: center;
+}
+
+/*RWD*/
+@media screen and (max-width:1280px){
+
+    nav a{
+        width: 15%;
+        height: 68px;
+        margin: 0px 1.15% 15px 1.15%;
+    }
+
+    #TITLE{
+        line-height: 400px;
+        font-size: 30px;
+    }
+
+    article div{
+        height: 400px;
+    }
+    
+    article div div{
+        width: 400px;
+    }
+
+    .img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:900px){
+    *{
+        font-size: 15px;
+        font-style: "微軟正黑體",sans-serif;
+    }
+    nav{
+        margin-top: 0px;
+    }
+    nav a{
+        display: inline-block;
+        color: white;
+        background-color: #eeb7b2;
+        width: 18%;
+        height: 60px;
+        margin: 0px 1.15% 20px 1.15%;
+        text-decoration: none;
+    }
+
+    #TITLE{
+        line-height: 300px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    article div{
+        height: 300px;
+        background-color: #eeb7b2;
+        margin-bottom: 0px;
+        text-align: center;/*此行必在主題欄裡，在子物件使用inline-block就能平行並排*/
+        color: white;
+    }
+    
+    article div div{
+        display: inline-block;
+        width: 300px;
+        margin: 0 -1%;
+        background-color: #eeb7b2;
+        color: #555555;
+        vertical-align: middle;
+    }
+
+    .img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .place{
+        font-size: 20px;
+    }
+
+}
+

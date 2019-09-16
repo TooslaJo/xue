@@ -1,0 +1,55 @@
+*{
+    font-size: 20px;
+    font-style: "微軟正黑體",sans-serif;
+}
+
+::selection{
+    background: gold;
+    color: white;
+}
+
+::-moz-selection{
+    background: gold;
+    color: white;
+}
+
+/*navigation bar*/
+nav{
+    margin-top: -160px;
+    text-align: center;  /*此行必在導覽列裡，在子物件使用inline-block就能平行並排*/
+}
+
+nav a{
+    display: inline-block;
+    color: white;
+    background-color: #eeb7b2;
+    width: 9.1%;
+    height: 68px;
+    margin: 50px 1.15%;
+    text-decoration: none;
+}
+
+/*article*/
+.flexslider{
+    width: 25%;
+    border-top: solid 10px #eeb7b2;
+    border-bottom: solid 30px #eeb7b2;
+    margin:0 auto 100px auto;
+    text-align: center;/*此行必在主題欄裡，在子物件使用inline-block就能平行並排*/
+}
+
+/*RWD*/
+@media screen and (max-width:1280px){
+
+}
+
+@media screen and (max-width:900px){
+    *{
+        font-size: 15px;
+        font-style: "微軟正黑體",sans-serif;
+    }
+    .flexslider{
+        width: 50%;
+    }
+}
+
