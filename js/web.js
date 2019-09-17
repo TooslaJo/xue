@@ -47,7 +47,7 @@ $(document).ready(function(){
             $("html,body").animate({"scrollTop":"0"});
             n=1;
     });
-
+    /*
     var pic = $("#PIC");
     pic.hover(
         function(){
@@ -57,9 +57,9 @@ $(document).ready(function(){
         },function(){
             $(this).css({"background-color":"green",
                         "color":"black",
-                        "transition": "all 0.2s ease"});
+                        "transition": "all 0.2s ease"
     });
-        
+    */
 
     /*$("#ONE,#TWO,#THREE,#FOUR,#FIVE").hover(
         function(){
