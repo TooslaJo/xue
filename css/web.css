@@ -3,15 +3,35 @@
     font-style: "微軟正黑體",sans-serif;
 }
 
+/*反白設計*/
 ::selection{
     background: gold;
     color: white;
 }
-
 ::-moz-selection{
     background: gold;
     color: white;
 }
+
+/*Scroll Bar設計(限Google,Safari)*/
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #eec8c4;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: white;
+    transition: all 0.2s ease;
+}
+::-webkit-scrollbar-track{
+    background: #eeb7b2;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+
 
 /*gotoTop回首頁*/
 #gotop{
@@ -28,7 +48,7 @@ nav{
     text-align: center;  /*此行必在導覽列裡，在子物件使用inline-block就能平行並排*/
 }
 
-nav div{
+nav div,#PIC{
     display: inline-block;
     color: white;
     background-color: #eeb7b2;
@@ -36,13 +56,6 @@ nav div{
     height: 68px;
     margin: 50px 1.15%;
     text-decoration: none;
-}
-
-#TITLE{
-    line-height: 500px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
 }
 
 /*article*/
@@ -68,6 +81,11 @@ article div div{
     height: 500px;
 }
 
+.flexslider{
+    border: 0;
+    margin: 0;
+}
+
 /*超連結提示使用者不能點選(未完)
 a{  
     cursor: not-allowed;
@@ -82,6 +100,11 @@ a{
 footer{
     font-size: 15px; 
     color: #555555;
+    text-align: center;
+}
+
+footer p{
+    font-size: 15px; 
     text-align: center;
 }
 
@@ -107,6 +130,10 @@ footer{
         width: 400px;
     }
 
+    .text{
+        overflow: auto;
+    }
+
     .img{
         width: 400px;
         height: 400px;
@@ -121,7 +148,7 @@ footer{
     nav{
         margin-top: 0px;
     }
-    nav a{
+    nav div{
         display: inline-block;
         color: white;
         background-color: #eeb7b2;
@@ -129,6 +156,10 @@ footer{
         height: 60px;
         margin: 0px 1.15% 20px 1.15%;
         text-decoration: none;
+    }
+
+    nav div p b{
+        font-size: 20px;
     }
 
     #TITLE{
@@ -155,6 +186,10 @@ footer{
         vertical-align: middle;
     }
 
+    .text{
+        overflow: auto;
+    }
+
     .img{
         width: 300px;
         height: 300px;
@@ -164,5 +199,75 @@ footer{
         font-size: 20px;
     }
 
+}
+
+
+@media screen and (max-width:600px){
+    *{
+        font-size: 10px;
+        font-style: "微軟正黑體",sans-serif;
+    }
+    header{
+        display: none;
+    }
+
+    nav{
+        margin-top: 20px;
+    }
+    nav div{
+        display: inline-block;
+        color: white;
+        background-color: #eeb7b2;
+        width: 20%;
+        height: 40px;
+        margin: 0px 1.15% 20px 1.15%;
+        text-decoration: none;
+    }
+
+    nav div p b{
+        font-size: 15px;
+    }
+
+    #TITLE{
+        line-height: 300px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    article div{
+        height: 150px;
+        background-color: #eeb7b2;
+        margin-bottom: 0px;
+        text-align: center;/*此行必在主題欄裡，在子物件使用inline-block就能平行並排*/
+        color: white;
+    }
+    
+    article div div{
+        display: inline-block;
+        width: 150px;
+        margin: 0 -1%;
+        background-color: #eeb7b2;
+        color: #555555;
+        vertical-align: middle;
+    }
+
+    #xue{
+        display: none;
+    }
+
+
+    .text{
+        overflow: auto;
+    }
+
+    .img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .place{
+        font-size: 15px;
+    }
 }
 
