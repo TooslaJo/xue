@@ -62,7 +62,6 @@ nav div,#PIC{
 article div{
     height: 500px;
     background-color: #eeb7b2;
-    margin-bottom: 50px;
     text-align: center;/*此行必在主題欄裡，在子物件使用inline-block就能平行並排*/
     color: white;
 }
@@ -70,18 +69,26 @@ article div{
 article div div{
     display: inline-block;
     width: 500px;
-    margin: 0 1.15%;
     background-color: #eeb7b2;
     color: #555555;
-    vertical-align: middle;
 }
 
 .sepLine{
-    display: none;
     border: 0px;
     height: 5px;
-    margin: 20px;
+    margin: 30px;
     background-image: linear-gradient(to right, white, #eeb7b2, white);
+}
+
+.text{
+    position: relative;
+    margin: auto;
+}
+
+.text p{
+    position: absolute;
+    top:45%;
+    transform: translate(0%, -50%);
 }
 
 .img{
@@ -89,9 +96,20 @@ article div div{
     height: 500px;
 }
 
+#PIC{
+    background-color: rgb(230, 206, 74);
+    width: 50%; 
+    height: 30px; 
+    margin-top: 10px;
+}
+
+#PIC:hover{
+    background-color: gold; 
+    transition: all 0.2s ease;
+}
+
 .flexslider{
     border: 0;
-    margin: 0;
 }
 
 /*超連結提示使用者不能點選(未完)
@@ -151,15 +169,11 @@ footer p{
 @media screen and (max-width:900px){
     *{
         font-size: 12.5px;
-        font-style: "微軟正黑體",sans-serif;
     }
     nav{
         margin-top: 0px;
     }
     nav div{
-        display: inline-block;
-        color: white;
-        background-color: #eeb7b2;
         width: 18%;
         height: 60px;
         margin: 0px 1.15% 20px 1.15%;
@@ -179,24 +193,18 @@ footer p{
 
     article div{
         height: 300px;
-        background-color: #eeb7b2;
         margin-bottom: 0px;
-        text-align: center;/*此行必在主題欄裡，在子物件使用inline-block就能平行並排*/
-        color: white;
     }
     
     article div div{
-        display: inline-block;
         width: 300px;
         margin: 0 -1%;
-        background-color: #eeb7b2;
-        color: #555555;
-        vertical-align: middle;
     }
 
     .text{
-        overflow: auto;
+        overflow: hidden;
     }
+
 
     .img{
         width: 300px;
@@ -243,17 +251,12 @@ footer p{
     }
 
     article div{
-        height: 680px;
-        background-color: #eeb7b2;
-        margin-bottom: 0px;
-        text-align: center;/*此行必在主題欄裡，在子物件使用inline-block就能平行並排*/
-        color: white;
+        height: 600px;
     }
     
     article div div{
-        display: inline-block;
         height: 300px;
-        margin: 20px -1%;
+        margin: 0px 0%;
         background-color: #eeb7b2;
         color: #555555;
         vertical-align: middle;
@@ -268,22 +271,32 @@ footer p{
         display: block;
     }
 
-    .text{
-        overflow: hidden;
-    }
-
     .img{
         width: 300px;
         height: 300px;
     }
+
+    #PIC{
+        height: 50px; 
+    }
+
+    #PIC p b {
+        font-size: 18px;
+    }
+
+    .flexslider{
+        border: 0;
+        margin: 0;
+    }
+    
 
     .place{
         font-size: 15px;
     }
 
     #gotop{
-        right: 40px;
-        bottom: 140px;
+        right: 50px;
+        bottom: 100px;
     }
 }
 
