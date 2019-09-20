@@ -10,23 +10,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <!--Allow all browser to crawl & index-->
-        <meta name="robots" content="index,follow,noodp">
+        <meta name="robots" content="index,follow">
         <!--Allow Google to crawl & index-->
         <meta name="googlebot" content="index,follow">
-        
-        <!--Google Search Console Verification-->
-        <meta name="google-site-verification" content="owttGdR_nKGRfwCECTWjyJEf3vN3DkMbcswxWlMycyY" />
 
         <!--Favicon-->
         <link rel="shortcut icon" href="src/favicon.ico" type="image/png"/>
         
         <!--Import CSS-->
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css">
         <link rel="stylesheet" href="css/web.css" type="text/css"/>
 
-        <!--Import jQuery-->
+        <!--Import jQuery(including flexslider)-->
         <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
         </script>
+        <script src="js/jquery.flexslider.js"></script>
         <script src="js/web.js"></script>
 
         <title>喜娘薛姐</title>
@@ -61,13 +60,6 @@
             <div><p><b>喜娘據點</b></p></div>
             <div><p><b>聯絡資訊</b></p></div>
         </nav>
-
-        <nav style="display: none;">
-            <a href="page1.html"><p><b>個人簡介</b></p></a>
-            <a href="page1.html"><p><b>牽線經歷</b></p></a>
-            <a href="page1.html"><p><b>喜娘據點</b></p></a>
-            <a href="page1.html"><p><b>聯絡資訊</b></p></a>
-        </nav>
         
         <!--article-->
         <article>
@@ -75,13 +67,13 @@
             <!--one-->
             <div id="ONE">
                 <div><img class="img" src="src/LOGO.png" title="喜娘薛姐"/></div>
-                <div><img class="img" src="src/pic1.jpg" title="喜娘薛姐"/></div>
+                <div id="xue"><img class="img" src="src/pic1.jpg" title="喜娘薛姐"/></div>
             </div>
           
             <!--two-->
             <div id="TWO">
                 <div><img class="img" src="src/pic2.jpg" title="喜娘薛姐：個人簡介"></div>
-                <div><br><br><br>
+                <div class="text">
                     22歲於婚紗公司當店長為新人服務，<br>
                     每天接觸喜氣洋洋的人事物很開心，<br>
                     個性古道熱腸、開朗豪氣，也是位大辣辣的性情中人，<br><br>
@@ -93,13 +85,12 @@
 
                     喜娘薛姐（瑪莎蔻）經兩性專家饒教授授課指導，
                     都把新人當成親人般在找對象的心態，嚴謹把關。<br>
-                    
                 </div>
             </div>
           
             <!--three-->
             <div id="THREE">
-                <div><br><br>
+                <div class="text">
                     喜娘薛姐（瑪莎蔻）至今服務數年，<br>
                     到目前為止新人婚姻圓滿度佳，<br>
                     值得大家的推薦、肯定與信賴。<br>
@@ -117,8 +108,14 @@
           
             <!--four-->
             <div id="FOUR">
-                <div><img class="img" src="src/pic4.jpg" title="喜娘薛姐：場所簡介"></div>
-                <div><br>
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img class="img" src="src/pic4.jpg" title="喜娘薛姐：場所簡介"></li>
+                        <li><img class="img" src="src/pic5.jpg" title="喜娘薛姐：場所簡介"></li>
+                        <li><img class="img" src="src/pic6.jpg" title="喜娘薛姐：場所簡介"></li>
+                    </ul>
+                </div>
+                <div class="text">
                     <b><u class="place"> 喜娘據點 </u></b><br><br>
                     方便讓新人找到我報名，安排相見歡，<br>
                     所以分租了台南市北區的店面，<br>
@@ -137,7 +134,7 @@
                
             <!--five-->
             <div id="FIVE">
-                <div><br><br><br>
+                <div class="text">
                     【台南火車站】<br>前站出站右轉，左轉至公園南路直走，總步行約10分鐘<br><br>
                     【台南轉運站】<br>出站右轉，往公園南路直走，總步行約5分鐘<br><br>
 
@@ -147,16 +144,16 @@
                     營業時間：周一至周日下午2點～晚上9點<br>
                     （<b>請事先電話預約</b>，下雨天、颱風天公休）
                 </div>
-                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6348808763832!2d120.20834601488384!3d23.000450122926434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76f4af2ff309%3A0x46dc303702401cdf!2zNzA05Y-w5Y2X5biC5YyX5Y2A5YWs5ZyS5Y2X6LevOTHomZ8!5e0!3m2!1szh-TW!2stw!4v1566542345664!5m2!1szh-TW!2stw" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6348808763832!2d120.20834601488384!3d23.000450122926434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76f4af2ff309%3A0x46dc303702401cdf!2zNzA05Y-w5Y2X5biC5YyX5Y2A5YWs5ZyS5Y2X6LevOTHomZ8!5e0!3m2!1szh-TW!2stw!4v1566542345664!5m2!1szh-TW!2stw" 
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
             </div>
         </article>
       
         <!--footer-->
         <footer style="margin-bottom: 80px;">
-            <p style="font-size: 15px; text-align: center;">
+            <p>
                 聯絡電話：0910785250 / 0916542297　&nbsp;
                 LINE ID：lv0910785520<br>
-                聯絡地址：周一至周日 14:00～21:00（請事先電話預約）<br>
                 ©喜娘薛姐 & ©Toosla Jo. All Rights Reserved. 
             </p>
         </footer>
