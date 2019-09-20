@@ -76,6 +76,14 @@ article div div{
     vertical-align: middle;
 }
 
+.sepLine{
+    display: none;
+    border: 0px;
+    height: 5px;
+    margin: 20px;
+    background-image: linear-gradient(to right, white, #eeb7b2, white);
+}
+
 .img{
     width: 500px;
     height: 500px;
@@ -142,7 +150,7 @@ footer p{
 
 @media screen and (max-width:900px){
     *{
-        font-size: 15px;
+        font-size: 12.5px;
         font-style: "微軟正黑體",sans-serif;
     }
     nav{
@@ -201,10 +209,9 @@ footer p{
 
 }
 
-
 @media screen and (max-width:600px){
     *{
-        font-size: 10px;
+        font-size: 12px;
         font-style: "微軟正黑體",sans-serif;
     }
     header{
@@ -219,7 +226,7 @@ footer p{
         color: white;
         background-color: #eeb7b2;
         width: 20%;
-        height: 40px;
+        height: 45px;
         margin: 0px 1.15% 20px 1.15%;
         text-decoration: none;
     }
@@ -236,7 +243,7 @@ footer p{
     }
 
     article div{
-        height: 150px;
+        height: 680px;
         background-color: #eeb7b2;
         margin-bottom: 0px;
         text-align: center;/*此行必在主題欄裡，在子物件使用inline-block就能平行並排*/
@@ -245,29 +252,38 @@ footer p{
     
     article div div{
         display: inline-block;
-        width: 150px;
-        margin: 0 -1%;
+        height: 300px;
+        margin: 20px -1%;
         background-color: #eeb7b2;
         color: #555555;
         vertical-align: middle;
     }
 
-    #xue{
-        display: none;
+    article div div a p b{
+        font-size: 15px;
     }
 
 
+    .sepLine{
+        display: block;
+    }
+
     .text{
-        overflow: auto;
+        overflow: hidden;
     }
 
     .img{
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 300px;
     }
-    
+
     .place{
         font-size: 15px;
+    }
+
+    #gotop{
+        right: 40px;
+        bottom: 140px;
     }
 }
 
