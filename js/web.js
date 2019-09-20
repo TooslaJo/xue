@@ -48,7 +48,7 @@ $(document).ready(function(){
             n=1;
     });
     /*
-    var pic = $("#PIC");
+    var pic = $("#PIC")
     pic.hover(
         function(){
             $(this).css({"background-color":"gold",
@@ -58,8 +58,18 @@ $(document).ready(function(){
             $(this).css({"background-color":"green",
                         "color":"black",
                         "transition": "all 0.2s ease"
+    });*/
+    
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide", 
+            slideDirection: "vertical",  //String: Select the sliding direction, "horizontal" or "vertical"
+            controlNav: false,      // Boolean: 是否建立控制點
+            slideshowSpeed: 3000,   //time interval(ms)
+            animationSpeed: 800,    //scroll time(ms)
+            touch: true             //if支持觸屏滑動
+        });
     });
-    */
 
     /*$("#ONE,#TWO,#THREE,#FOUR,#FIVE").hover(
         function(){
@@ -96,12 +106,8 @@ $(document).ready(function(){
                             $("#FIVE").fadeIn(1000);
                         }
                     }
-                }
-                
+                }            
             }
-            
-            
-            
         }
     )
 
