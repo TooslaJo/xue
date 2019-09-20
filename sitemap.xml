@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!--sitemap: ALL-->
+    <url>
+        <loc>https://tooslajo.github.io/xue/</loc>
+        <lastmod>2019-09-20</lastmod>
+        <!--更新值：always,hourly,daily,weekly,monthly,yearly,never-->
+        <changefreq>weekly</changefreq>
+        <!--priority: 1.0~0.0-->
+        <priority>0.8</priority>    
+    </url>
+
+    <!--sitemap: 主頁-->
+    <url>
+        <loc>https://tooslajo.github.io/xue/index.html</loc>
+        <lastmod>2019-09-20</lastmod>
+        <!--更新值：always,hourly,daily,weekly,monthly,yearly,never-->
+        <changefreq>weekly</changefreq>
+        <!--priority: 1.0~0.0-->
+        <priority>0.9</priority>    
+    </url>
+
+    <!--sitemap: 牽線花絮-->
+    <url>
+        <loc>https://tooslajo.github.io/xue/page1.html</loc>
+        <lastmod>2019-09-20</lastmod>
+        <!--更新值：always,hourly,daily,weekly,monthly,yearly,never-->
+        <changefreq>daily</changefreq>
+        <!--priority: 1.0~0.0-->
+        <priority>0.5</priority>    
+    </url>
+
+</urlset>
