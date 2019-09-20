@@ -31,15 +31,6 @@ $(document).ready(function(){
         function(){
             $("html,body").animate({"scrollTop":$("#FIVE").offset().top});
     });
-
-    i=1;
-    $("#slide").click(
-        function(){
-            if      (i==1)  {$(this).attr("src","src/pic5.jpg"); i++;} 
-            else if (i==2)  {$(this).attr("src","src/pic6.jpg"); i++;}
-            else            {$(this).attr("src","src/pic4.jpg"); i=1;}
-        }
-    );
     
     //回首頁
     $("#gotop").click(
