@@ -32,14 +32,14 @@
     display: none;
 }
 
-
 /*gotoTop回首頁*/
-#gotop{
-    color: black;
+
+#gotopButton{
     right: 100px;
     bottom: 100px;
-    position: fixed;
     cursor: pointer;
+    position: fixed;
+    z-index: 1;
 }
 
 /*navigation bar*/
@@ -87,7 +87,7 @@ article div div{
 
 .text p{
     position: absolute;
-    top:45%;
+    top: 45%;
     transform: translate(0%, -50%);
 }
 
@@ -98,9 +98,10 @@ article div div{
 
 #PIC{
     background-color: rgb(230, 206, 74);
-    width: 50%; 
+    width: 70%; 
     height: 30px; 
     margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 #PIC:hover{
@@ -210,6 +211,14 @@ footer p{
         width: 300px;
         height: 300px;
     }
+
+    #PIC{
+        height: 30px; 
+    }
+
+    #PIC b {
+        font-size: 20px;
+    }
     
     .place{
         font-size: 20px;
@@ -277,11 +286,11 @@ footer p{
     }
 
     #PIC{
-        height: 50px; 
+        height: 30px; 
     }
 
-    #PIC p b {
-        font-size: 18px;
+    #PIC b {
+        font-size: 20px;
     }
 
     .flexslider{
@@ -294,9 +303,9 @@ footer p{
         font-size: 15px;
     }
 
-    #gotop{
+    #gotopButton{
         right: 50px;
-        bottom: 100px;
+        bottom: 25px;
     }
 }
 
