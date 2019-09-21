@@ -15,6 +15,13 @@ $(document).ready(function(){
     });
 });
 
+$(function(){
+    $("div.img img").click(function(){
+        $(this).toggleClass("imgSize");
+        $(this).toggleClass("imgSizeMax");
+    });
+});
+
 //輪播機制
 $(window).load(function() {
     $('.flexslider').flexslider({
