@@ -123,6 +123,17 @@ a{
     font-size: 30px;
 }
 
+.cel{
+    font-weight: bold;
+    color: gold;
+    text-decoration: none;
+}
+.cel:hover{
+    background-color: gold;
+    color:white;
+    transition: all 0.2s ease;
+}
+
 /*footer*/
 footer{
     font-size: 15px; 
