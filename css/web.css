@@ -171,6 +171,10 @@ footer p{
     .text{
         overflow: auto;
     }
+    
+    #FOUR>.text{
+        font-size: 18px;
+    }
 
     .img{
         width: 400px;
@@ -216,7 +220,7 @@ footer p{
     .text{
         overflow: hidden;
     }
-
+    
 
     .img{
         width: 300px;
